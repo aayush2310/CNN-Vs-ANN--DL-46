@@ -1,0 +1,14 @@
+when we get the feature map,we add a bias to it.For every filter,we have a bias,first we generate a feature map,then we add that bias to it.
+The node of ANN and the filter of CNN are similar.In both the cases,we are doing some multiplications and then adding some bias to get the o/p.
+There is a difference b/w ANN and CNN that to capture that 2D pattern,we are dealing in the inherent matrix format only.
+In ANN,we train the weights and in CNN we train the filter values.
+so,the training process(back-propagation) is somewhat similar to what we did in ANN.
+If I am adding a new filter in CNN,then it will be as if I am adding a new node in ANN.
+So,we can consider that the filter in CNN is similar to nodes in ANN but their operations are different
+
+Differences:-
+The 3D CNN model shown is having ((3*3*3)*50)+50=1400 learnable parameters.
+Now if I change the dimension of the image and the filters remain the same,then also the total number of learnable parameters remain the same.This is the difference and
+the best part about CNN.So,computational cost reduces.
+and if number of trainable parameters are more,then chances of overfitting also increases as in ANN.
+and as we slide the filters,we capture the 2D features in CNN which is not possible in ANN.
